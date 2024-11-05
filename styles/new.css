@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+header button {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+header button:hover {
+  background-color: #005bb5;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  background-color: #edeff1;
+  height: 50px;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+}
+.toolbar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.toolbar button {
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+  color: #333333;
+  cursor: pointer;
+}
+.toolbar select {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  color: #333333;
+  width: 50px;
+  outline: none;
+}
+.toolbar button.active {
+  color: #007aff;
+
+  svg {
+    fill: #007aff;
+  }
+}
+.text-editor textarea {
+  width: 100%;
+  background-color: inherit;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  resize: none;
+  margin: 0;
+}
+.text-editor .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.text-editor .content {
+  font-size: 16px;
+  height: 50px;
+}
