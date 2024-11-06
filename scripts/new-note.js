@@ -112,21 +112,6 @@ fontSize.addEventListener("change", () => {
   activeTextarea.style.fontSize = `${fontSize.value}px`;
 });
 
-// Change text color
-const changeTextColor = (color) => {
-  if (!activeTextarea) return;
-
-  activeTextarea.style.color = color;
-};
-
-const changeBgColor = (color) => {
-  textareas.forEach((textarea) => {
-    textarea.style.backgroundColor = color;
-  });
-
-  document.body.style.backgroundColor = color;
-};
-
 saveButton.addEventListener("click", () => {
   const date = new Date();
   const lastSaved = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} at ${date.getHours()}:${date.getMinutes()}`;
@@ -135,7 +120,6 @@ saveButton.addEventListener("click", () => {
   const noteData = {
     title: {
       text: titleTextarea.value,
-      color: titleTextarea.style.color || "#333333",
       fontSize: titleTextarea.style.fontSize || "20px",
       bold: titleTextarea.style.fontWeight === "bold",
       italic: titleTextarea.style.fontStyle === "italic",
@@ -144,7 +128,6 @@ saveButton.addEventListener("click", () => {
     },
     content: {
       text: contentTextarea.value,
-      color: contentTextarea.style.color || "#333333",
       fontSize: contentTextarea.style.fontSize || "16px",
       bold: contentTextarea.style.fontWeight === "bold",
       italic: contentTextarea.style.fontStyle === "italic",
@@ -152,7 +135,6 @@ saveButton.addEventListener("click", () => {
       alignment: contentTextarea.style.textAlign || "left",
     },
     lastSaved,
-    backgroundColor: document.body.style.backgroundColor || "#ffffff",
   };
 
   // Save the note data to local storage

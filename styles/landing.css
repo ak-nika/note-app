@@ -53,11 +53,12 @@ section main {
   border-radius: 6px;
   padding: 12px;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 section main:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-section main h1 {
+section main h3 {
   font-size: 18px;
   color: #333333;
   font-weight: 600;
@@ -71,6 +72,9 @@ section main p {
 section main span {
   font-size: 12px;
   color: #999999;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: right;
 }
 footer {
   background-color: #edeff1;
