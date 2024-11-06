@@ -8,10 +8,16 @@ const getNoteKeyFromUrl = () => {
 
 const loadNoteToEdit = () => {
   const noteKey = getNoteKeyFromUrl();
-  if (!noteKey) return;
+  if (!noteKey) {
+    alert("Note not found 😢💔");
+    window.location.href = "../index.html";
+  }
 
   const noteData = JSON.parse(localStorage.getItem(noteKey));
-  if (!noteData) return;
+  if (!noteData) {
+    alert("Note not found 😢💔");
+    window.location.href = "../index.html";
+  }
 
   // Get title and content text areas
   const titleTextarea = document.getElementById("title");

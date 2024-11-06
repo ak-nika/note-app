@@ -7,6 +7,9 @@
 body {
   background-color: #f5f7fa;
   font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 header {
   display: flex;
@@ -39,6 +42,7 @@ header button:hover {
   background-color: #005bb5;
 }
 section {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 12px;
@@ -63,6 +67,7 @@ section main h3 {
   color: #333333;
   font-weight: 600;
   overflow: ellipsis;
+  margin-bottom: 1.5rem;
 }
 section main p {
   font-size: 14px;
