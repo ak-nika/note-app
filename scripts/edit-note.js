@@ -81,5 +81,5 @@ editButton.addEventListener("click", () => {
 deleteButton.addEventListener("click", () => {
   localStorage.removeItem(getNoteKeyFromUrl());
   alert("Note deleted successfully!!");
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 });

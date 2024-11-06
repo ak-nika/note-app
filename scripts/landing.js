@@ -2,7 +2,7 @@ const newNoteBtn = document.getElementById("new-note");
 const notesContainer = document.getElementById("notes");
 
 newNoteBtn.addEventListener("click", () => {
-  window.location.href = "./pages/new-note.html";
+  window.location.href = "./new-note.html";
 });
 
 const displayNotes = () => {
@@ -52,7 +52,7 @@ const displayNotes = () => {
 };
 
 const loadNoteToEdit = (key) => {
-  window.location.href = "./pages/edit-note.html?key=" + key;
+  window.location.href = "./edit-note.html?key=" + key;
 };
 
 window.addEventListener("load", () => {

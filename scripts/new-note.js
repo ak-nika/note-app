@@ -142,5 +142,5 @@ saveButton.addEventListener("click", () => {
 
   // Redirect to the notes page
   alert("Note saved successfully!");
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 });
