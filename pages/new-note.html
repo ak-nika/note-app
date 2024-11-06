@@ -22,7 +22,7 @@
         </svg>
       </button>
       <h1>New Note</h1>
-      <button>Save</button>
+      <button id="save" title="Save note">Save</button>
     </header>
 
     <section class="toolbar">
@@ -62,7 +62,7 @@
 
       <div>
         <span>Text Align:</span>
-        <button id="align-left" class="active" onclick="setTextAlign('left')">
+        <button id="align-left" onclick="setTextAlign('left')">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="20px"
@@ -101,6 +101,25 @@
             />
           </svg>
         </button>
+      </div>
+
+      <div>
+        <span>Text Color:</span>
+        <input
+          type="color"
+          id="textColor"
+          value="#333333"
+          oninput="changeTextColor(this.value)"
+        />
+      </div>
+
+      <div>
+        <span>Background Color:</span>
+        <input
+          type="color"
+          value="#ffffff"
+          oninput="changeBgColor(this.value)"
+        />
       </div>
     </section>
 
