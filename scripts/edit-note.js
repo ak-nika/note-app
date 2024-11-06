@@ -1,4 +1,5 @@
 const editButton = document.getElementById("edit");
+const deleteButton = document.getElementById("delete");
 
 // Function to get the note key from the URL
 const getNoteKeyFromUrl = () => {
@@ -74,5 +75,11 @@ editButton.addEventListener("click", () => {
 
   localStorage.setItem(key, JSON.stringify(noteData));
   alert("Note edited successfully!!");
+  window.location.href = "../index.html";
+});
+
+deleteButton.addEventListener("click", () => {
+  localStorage.removeItem(getNoteKeyFromUrl());
+  alert("Note deleted successfully!!");
   window.location.href = "../index.html";
 });

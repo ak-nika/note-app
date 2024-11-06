@@ -35,6 +35,12 @@ header button {
   cursor: pointer;
   transition: background-color 0.3s ease-in;
 }
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
 header button:hover {
   background-color: #005bb5;
 }
