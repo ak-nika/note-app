@@ -75,7 +75,7 @@ editButton.addEventListener("click", () => {
 
   localStorage.setItem(key, JSON.stringify(noteData));
   alert("Note edited successfully!!");
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 });
 
 deleteButton.addEventListener("click", () => {
