@@ -50,8 +50,6 @@ section {
   max-width: 800px;
   padding: 16px;
   margin-top: 20px;
-}
-section > p {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
